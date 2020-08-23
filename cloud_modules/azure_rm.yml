@@ -22,10 +22,10 @@
       tags:
         - azure
 
-    - name: Remove VM
-      azure_rm_virtualmachine:
-        resource_group: "{{ resource_group | default('qe') }}"
-        name: "{{ vm_name | default('tower-qe-test-vm') }}"
-        state: absent
-      tags:
-        - azure
+    # - name: Remove VM
+    #   azure_rm_virtualmachine:
+    #     resource_group: "{{ resource_group | default('qe') }}"
+    #     name: "{{ vm_name | default('tower-qe-test-vm') }}"
+    #     state: absent
+    #   tags:
+    #     - azure
